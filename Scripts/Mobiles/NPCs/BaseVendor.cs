@@ -173,10 +173,13 @@ namespace Server.Mobiles
 			}
 		}
 
-		public BaseVendor(string title)
-			: base(AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2)
-		{
-			LoadSBInfo();
+        //public BaseVendor(string title)
+        //    : base(AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2)
+
+        public BaseVendor(string title)
+            : base(AIType.AI_Vendor, FightMode.None, 2, 1, 1, 2)
+        {
+            LoadSBInfo();
 
 			Title = title;
 
