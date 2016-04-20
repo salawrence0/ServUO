@@ -161,6 +161,9 @@ namespace Server.Misc
 
             gc *= skill.Info.GainFactor;
 
+            // triple skill gain rate
+            gc *= 3;
+
             if (gc < 0.01)
                 gc = 0.01;
 
